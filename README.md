@@ -3,9 +3,13 @@
 How to Get a Girlfriend
 
 1️⃣ Find a girl 👩
+
 2️⃣ Send this to her ⏩
+
 3️⃣ She accepts your proposal👍
+
 4️⃣ Congratulations! You now have a girlfriend 😱
+
 5️⃣ Thanks for reading! 😁
 
 Notes:
