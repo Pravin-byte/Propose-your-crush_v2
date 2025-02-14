@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Propose Your crush</title>
+        <style>
+            html,body{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                height:100%;
+                width:100%;
+            }
+            .container{
+                position: relative;
+            }
+            #yes,#no{
+                border:none;
+                border-radius: 4px;
+                margin:10px 10px 10px 10px;
+                width:75px;
+                cursor: pointer;
+                font-size: medium;
+                font-weight: bold;
+            }
+            #yes{
+                padding: 10px;
+                background-color: green;
+            }
+            #no{
+                padding: 10px;
+                background-color: red;
+                position:absolute;
+                right:0;  
+            }
+            #yes:hover, #no:hover {
+                opacity: 0.7;
+                transform: scale(1.05);
+                transition: opacity 0.1s ease-in, transform 0.1s ease-in;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-weight: bold;
+            }
+            #newInfo {
+                display: none;
+                margin-top: 20px;
+                padding: 20px;
+            }
+            #image {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <img src="src/Untitled-1.jpeg" id="image">
+        <div class="container" id="initialContent">
+            <h1>Do you Love Me?</h1>
+            <button id="yes">Yes</button>
+            <button id="no">No</button>
+        </div>
+        <div id="newInfo">
+            <h3 style="text-align: center;">I knew it</h3>
+            <p style="font-family: Arial, Helvetica, sans-serif;">Now you are promoted to be My Gf</p>
+        </div>
+        <script>
+            const yesbt=document.getElementById("yes");
+            const nobt=document.getElementById("no");
+
+            nobt.addEventListener("mouseover",()=>{
+                let xpos=Math.floor(Math.random()*600);
+                let ypos=Math.floor(Math.random()*406);
+                
+                nobt.style.top=ypos+"px";
+                nobt.style.left=xpos+"px";
+
+            })
+
+            yesbt.addEventListener("click", () => {
+                const initialContent = document.getElementById("initialContent");
+                initialContent.style.display = 'none';
+
+                image.src="src/teddy-bear-hug-13.gif";
+                image.style.width="200px";
+                image.style.height="200px";
+                
+                const newInfo = document.getElementById("newInfo");
+                newInfo.style.display = 'block';
+            
+            });
+            
+        </script>
+    </body>
+</html>
